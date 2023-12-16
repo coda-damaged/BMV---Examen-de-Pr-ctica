@@ -33,7 +33,7 @@
     $("#feedback").hide();
     trivia.insertQuestionInfo();
     if (trivia.currentQuestion.image)
-    $('#image-holder').html(`<img src='/images/${trivia.currentQuestion.image}'</img>`);
+    $('#image-holder').html(`<img src='images/${trivia.currentQuestion.image}'</img>`);
 else 
     $('#image-holder').html(``);
     trivia.shuffleAnswers();
