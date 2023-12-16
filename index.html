@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>BMV - Examen de Práctica</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!-------------- WELCOME SCREEN --------------->
+  <div class='screen' id='welcome-screen'>
+    <h1>BMV - Examen de Práctica</h1>
+    <button class="start-btn">Empezar</button>
+    <br>
+    <br>
+    <hr>
+    <h2 align="center">Más Estudios:</h3>
+    <button onclick="window.location.href='https://www.in.gov/bmv/licenses-permits-ids/files/drivers-manual-spanish.pdf';">
+      Manual Del Conductor de Indiana <br>(Las preguntas vienen de este documento.)
+    </button>
+
+    <button onclick="window.location.href='https://apps.apple.com/us/app/dmv-genius-permit-practice/id513850893';">
+      DMV Genie Para Iphone
+    </button>
+
+    <button onclick="window.location.href='https://play.google.com/store/apps/details?id=dto.ee.dmv.genius';">
+      DMV Genie Para Android
+    </button>
+  </div>
+
+  <!-------------- CATEGORY SCREEN --------------->
+	<div class='screen' id='category-screen'>
+		<h1>Elige una categoría</h1>
+    <h3 text-align="center">Después de cada pregunta, se le dará un número de página que corresponde al Manual del conductor</h2>
+    <h3>Para esta práctica tendrás 45 segundos para responder cada pregunta para aprender más rápido y ayudarte a mantenerte concentrado <br>(La prueba real no tiene límite de tiempo)</h3>
+      <div id="category-set">
+    	</div>
+	</div>
+  
+<!-------------- QUESTION SCREEN --------------->
+<div class='screen' id='question-screen'>
+    <h1 id="timer">-</h1>
+    <h4 id="category">Categoría</h4>
+    <div id="image-holder"></div>
+    <h1 id="question">¿La pregunta va aquí?</h1>
+    <div id="answer-set">
+      <button class="answer-btn" id="correctAnswer">Respuesta Correcta</button>
+      <button class="answer-btn" id="incorrectAnswer1">Respuesta Incorrecta</button>
+      <button class="answer-btn" id="incorrectAnswer2">Respuesta Incorrecta</button>
+      <button class="answer-btn" id="incorrectAnswer3">Respuesta Incorrecta</button>
+    </div>
+    <h1 id="feedback">Comentarios irán aquí</h1>
+    
+  </div>
+
+
+<!-------------- THANK YOU SCREEN --------------->
+<div class='screen' id='thankyou-screen'>
+    <h1>Hora, terminaste</h1>
+    <!-- <h3 align="center">You're still a failure</h3> -->
+    <h4 id='game-results'></h4>
+    <button class="start-btn">Empezar de nuevo</button>
+  </div>
+  
+  <script src="script.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js'></script>
+<script src="https://cdn.jsdelivr.net/gh/idewcomputing/code-trivia/src/trivia.js"></script> <!-- iDEW trivia -->
+</body>
+
+</html>
